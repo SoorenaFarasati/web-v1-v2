@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UFC</title>
+    <style>
+        @keyframes shake {
+            0% { transform: translateX(0); }
+            25% { transform: translateX(-5px) rotate(-5deg); }
+            50% { transform: translateX(5px) rotate(5deg); }
+            75% { transform: translateX(-5px) rotate(-5deg); }
+            100% { transform: translateX(0); }
+        }
+
+        .shake-image {
+            animation: shake 0.5s;
+        }
+
+        .icons a:hover {
+            color: red;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/UFC_Logo.svg/1280px-UFC_Logo.svg.png"></a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">Biggest PPV</a></li>
+                    <li><a href="people.html">UFC G.O.A.T.S</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-times" onclick="showMenu()"></i>
+        </nav>
+        <h1>UFC Highlight</h1>
+    </section>
+
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>Biggest UFC Event Of All Time</h1>
+                <p>The biggest UFC event of all time is UFC 229 (06/10/2018). It is famous because of the fight between Conor Mcgregor and Khabib Nurmagomedov. The event sold approximately 2.4 million pay-per-views and went down as UFC's biggest event of all time.</p>
+                <a href="" class="hero-btn red-btn">UFC 229</a>
+            </div>
+            <div class="about-col">
+                <img src="https://cdn.vox-cdn.com/thumbor/kpaEtW3Zf_-T6rLfxA9yCyc4Kbk=/0x0:572x796/1200x800/filters:focal(241x353:331x443)/cdn.vox-cdn.com/uploads/chorus_image/image/60990421/DlPHY7CU0AALejX.jpg_large.0.jpg" onclick="handleImageClick(this)">
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Copyright © 2001-2022 UFC All Rights Reserved</p>
+        <div class="icons">
+            <a href="https://www.instagram.com/ufc/" class="fa fa-instagram" onmouseover="changeIconColor(this)" onmouseout="resetIconColor(this)"></a>
+            <a href="https://twitter.com/ufc" class="fa fa-twitter" onmouseover="changeIconColor(this)" onmouseout="resetIconColor(this)"></a>
+            <a href="https://www.youtube.com/c/ufc" class="fa fa-youtube" onmouseover="changeIconColor(this)" onmouseout="resetIconColor(this)"></a>
+            <a href="https://www.ufc.com/" class="fa fa-google" onmouseover="changeIconColor(this)" onmouseout="resetIconColor(this)"></a>
+        </div>
+    </section>
+
+    <script>
+        function handleImageClick(image) {
+            image.classList.add("shake-image");
+            setTimeout(function() {
+                image.classList.remove("shake-image");
+            }, 500);
+        }
+
+        function changeIconColor(icon) {
+            icon.style.color = "red";
+        }
+
+        function resetIconColor(icon) {
+            icon.style.color = "";
+        }
+    </script>
+</body>
+</html>
+

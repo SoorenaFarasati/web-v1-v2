@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UFC</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .spin {
+            animation: spin 1s infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/UFC_Logo.svg/1280px-UFC_Logo.svg.png"></a> 
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">Biggest PPV</a></li>
+                    <li><a href="people.html">UFC G.O.A.T.S</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-times" onclick="showMenu()"></i>
+        </nav>
+    </section>
+    
+    <div class="text-box">
+        <h1>UFC Background</h1>
+        <p>Starting in 1993 as a professional mixed martial arts (MMA) organization, UFC® has revolutionized the fight business and today stands as a premium global sports brand, media content company and the largest Pay-Per-View (PPV) event provider in the world.<br>
+            UFC follows a rich history and tradition of competitive MMA dating back to Pankration, a Greek Olympic Games event introduced in 648 BC. About 80 years ago, a Brazilian form of MMA known as Vale Tudo (anything goes) sparked local interest in the sport. UFC then introduced organized and sanctioned MMA to the United States. The goal was to find “the Ultimate Fighting Champion” by staging a single-night tournament featuring the best athletes skilled in the various disciplines of all martial arts, including karate, jiu-jitsu, boxing, kickboxing, grappling, wrestling, sumo and other combat sports. The winner of the tournament would be crowned the champion.<br>
+            In January 2001, under the new ownership of Zuffa, LLC and guided by the leadership of owners Frank Fertitta III, Lorenzo Fertitta, and Dana White, the UFC brand restructured MMA into a highly organized, sanctioned and controlled combat sport. Headquartered in Las Vegas with a network of employees around the world, UFC produces more than 40 live events annually that consistently sell out some of the most prestigious arenas around the globe.<br>
+            UFC programming is broadcast in over 165 countries and territories, via more than 60 global broadcast partners, to more than 1.1 billion TV households worldwide in over 40 different languages. UFC has the highest concentration of millennials (ages 18-34) in its fan base with 40% compared to the top sports properties.<br>
+            In December 2013, UFC launched UFC FIGHT PASS®, a digital subscription service, which delivers exclusive live events, thousands of fights on-demand and original content to fans around the world, positioning the over-the-top digital network as the premier destination for fight fans.<br>
+            Throughout the years, UFC has consistently strived for the highest levels of safety and quality in all aspects of the sport. </p>
+        <a href="#" class="hero-btn" id="knowMoreBtn">Know More</a>
+    </div>
+             
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Copyright © 2001-2022 UFC All Rights Reserved</p>
+        <div class="icons">
+            <a href="https://www.instagram.com/ufc/" class="fa fa-instagram"></a>
+            <a href="https://twitter.com/ufc" class="fa fa-twitter"></a>
+            <a href="https://www.youtube.com/c/ufc" class="fa fa-youtube"></a>
+            <a href="https://www.ufc.com/" class="fa fa-google"></a>
+        </div>
+    </section>
+
+    <script>
+        const knowMoreBtn = document.getElementById('knowMoreBtn');
+
+        knowMoreBtn.addEventListener('mouseover', function() {
+            this.classList.add('spin');
+        });
+
+        knowMoreBtn.addEventListener('mouseout', function() {
+            this.classList.remove('spin');
+        });
+    </script>
+</body>
+</html>

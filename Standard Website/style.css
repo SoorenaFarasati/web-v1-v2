@@ -1,0 +1,311 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Anton', sans-serif;
+/**/
+}
+.header{
+    min-height: 100vh;
+    width: 100%; 
+    background-image: url("https://wallpaperaccess.com/full/3843116.jpg") ;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+/*styles the header section of your website. 
+    It sets the minimum height to 100% of the viewport (100vh), 
+    the width to 100%, and applies a background image using the background-image property.
+    The background-position is set to center and background-size to cover to ensure the image covers the entire header section. 
+    The position property is set to relative.*/
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+/*styles the navigation bar. 
+It is displayed as a flex container with some padding and uses justify-content: 
+space-between to position the navigation elements at the ends of the container. 
+The align-items: center property centers the items vertically.*/
+nav img{
+    width: 150px;
+}
+/*styles the logo image within the navigation bar. It sets the width to 150 pixels.*/
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+ /*class styles the navigation links container. 
+    It uses flex: 1 to allow the links to expand and fill the available space. 
+    The text-align property is set to right to align the links to the right side of the container.*/
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+/* styles the individual navigation list items. 
+They are displayed as inline-block elements with some padding and positioned relatively.*/
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+
+}
+/*styles the anchor tags within the navigation list items. 
+It sets the color to white (#fff), 
+removes the underline (text-decoration: none), and sets the font size to 13 pixels.*/
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+    /*creates an after pseudo-element for each list item. 
+    It is used to create an underline effect on hover. Initially, 
+    the width is set to 0, height to 2 pixels, and the background color to red (#f44336). 
+   */
+
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+/* On hover, the width is set to 100% using a transition effect.*/
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    /*styles a text container within the header section. 
+    It sets the width to 90%, the color to white (#fff), 
+    and positions it absolutely at 50% from the top and 50% from the left, 
+    then translates it to the center using transform: translate(-50%, -50%). 
+    The text is centered using text-align: center.*/
+}
+.text-box h1{
+    font-size: 62px;
+    text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+    /*styles the heading within the text box. 
+    It sets the font size to 62 pixels and applies a text shadow effect.*/
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff; 
+    text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+ 
+    /*styles the paragraphs within the text box. It sets some margin, 
+    font size, color, and applies a text shadow effect.*/
+}
+.hero-btn{
+   display: inline-block; 
+   text-decoration: none;
+   color: #fff;
+   border: 1px solid #fff;
+   padding: 12px 34px;
+   font-size: 13px;
+   background: transparent;
+   position: relative;
+   cursor: pointer;
+   /* styles the buttons within the header section. 
+   It is displayed as an inline-block element with some styles for appearance. 
+   */
+}
+.hero-btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+    /*On hover, the border color changes to red and the background color transitions with a duration of 1 second.*/
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  /*styles the social media icons. 
+  They are given some padding, 
+  font size, width, and text alignment. 
+  On hover, the opacity changes to 0.7.*/
+}
+
+
+.fa:hover {
+  opacity: 0.7;
+  /**/
+}
+
+
+.fa-instagram {
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  /*style the individual social media icons, setting their background color and text color.*/
+}
+
+
+.fa-twitter {
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  /*style the individual social media icons, setting their background color and text color.*/
+}
+
+.fa-youtube {
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  /*style the individual social media icons, setting their background color and text color.*/
+}
+
+.fa-google {
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  /*style the individual social media icons, setting their background color and text color.*/
+}
+
+
+/*------------------ about us page --------------*/
+
+.sub-header{
+  height: 50vh;
+  width: 100%;
+  background-image: url("https://www.wallpaperup.com/uploads/wallpapers/2015/01/30/605449/672629b39035f5aeafe25cac1e0753ae.jpg");
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  /*styles the sub-header section of your website. 
+  It sets the height to 50% of the viewport, width to 100%, 
+  and applies a background image using the background-image property. 
+  The background-position is set to center and background-size to cover. 
+  It also sets the text color to white and centers the text using text-align: center.*/
+}
+.sub-header h1{
+  margin-top: 100px;
+  /*styles the heading within the sub-header. It adds some margin to the top.*/
+}
+
+.about-us{
+  width: 80%;
+  margin: auto;
+  padding-top: 80px;
+  padding-bottom: 50px;
+  /*styles the about us section. It sets the width to 80%, 
+  centers it horizontally using margin: auto, and adds some padding to the top and bottom.*/
+}
+
+.about-col{
+  flex-basis: 48%;
+  padding: 30px 2px;
+  /*styles the columns within the about us section. 
+  It sets the flex-basis to 48% to distribute the columns evenly within the container and adds some padding. 
+  The images within these columns have a width of 50%.*/
+}
+.about-col img{
+  width: 50%;
+  /**/
+}
+.about-col h1{
+  padding-top: 0%;
+  /*styles the headings within the columns, adding some padding to the top.*/
+}
+.about-col p{
+  padding: 15px 0 25px;
+  /*styles the paragraphs within the columns, adding some padding.*/
+}
+
+.red-btn{
+  border: 1px solid #f44336;
+  background: transparent;
+  color: #f44336;
+  /*styles a red-colored button with a transparent background initially. */
+}
+
+.red-btn:hover{
+  color: #fff;
+  /*On hover, the color changes to white.*/
+}
+.main-header{
+  height: 50vh;
+  width: 100%;
+  background-image: url("https://pa1.narvii.com/7184/fe7281f8250f921aa438d3561dda9870239bb233r1-480-270_hq.gif");
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  /* styles the main header section of your website. 
+  It sets the height to 50% of the viewport, width to 100%, 
+  and applies a background image using the background-image property. 
+  The background-position is set to center and background-size to cover. 
+  It also sets the text color to white and centers the text using text-align: center.*/
+}
+.main-header h1{
+  margin-top: 100px;
+  /*styles the heading within the main header. It adds some margin to the top.*/
+
+/*-------- goat-content ----------*/
+
+}
+.goat-content{
+  width: 80%;
+  margin: auto;
+  padding: 60px 0;
+  /*styles the content section related to goats. 
+  It sets the width to 80%, centers it horizontally using margin: 
+  auto, and adds some padding to the top and bottom.*/
+}
+.goat-left{
+  flex-basis: 65%;
+  /*class styles the left column within the goat content section. 
+  It sets the flex-basis to 65% to occupy more space and adds some padding. 
+  The image within this column has a width of 35%.*/
+}
+.goat-left img{
+  width: 35%;
+  /**/
+}
+.goat-left h2{
+  color: #222;
+  font-weight: 600;
+  margin: 30px 0;
+  /* styles the heading within the left column, setting the color and margin.*/
+}
+.goat-left p{
+  color: #000;
+  padding: 0%;
+  /*styles the paragraphs within the left column, setting the color and padding.*/
+}
+.goat-right{
+  flex-basis: 32%;
+  /**/
+}
+.goat-right h3{
+  background: #f44336;
+  color: #fff;
+  padding: 7px 0;
+  font-size: 16px;
+  margin-bottom: 20px;
+/*styles the right column within the goat content section. 
+It sets the flex-basis to 32% to occupy less space and adds some padding. 
+The headings within this column have a background color, padding, font size, and margin-bottom.*/
+}
+.goat-right div{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #555;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 2px solid red;
+  border-radius: 8px;
+  padding: 5px;
+  /*styles the div elements within the right column. 
+  It sets the display to flex, aligns the items and justifies their space, 
+  and adds some border, padding, and border radius.*/
+}
+
+
+
